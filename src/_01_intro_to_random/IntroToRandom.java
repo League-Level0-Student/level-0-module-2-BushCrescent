@@ -5,16 +5,20 @@ package _01_intro_to_random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
-		int num = 0;
+		
 		
 		//3   Now to make num random. 
 		//3a. Create an object of the Random class, Hint: Random ran = new Random()
-		
+		Random ran = new Random();
+		int num = ran.nextInt(301)-222;
+		JOptionPane.showMessageDialog(null, num);
 		//3b. Next, set the value of num, using .nextInt() to get a random number from the Random object
-		
+	
 
 		//4. Now limit the value of num to be between 0 and 100
 
