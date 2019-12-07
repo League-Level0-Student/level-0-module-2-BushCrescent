@@ -5,16 +5,18 @@
 package _08_safe_cracker;
 
 import java.applet.AudioClip;
+
+import java.util.Random;
+
+
+import javax.swing.JApplet;
+import javax.swing.JOptionPane;
 import java.io.File;
 import java.net.MalformedURLException;
-import java.util.Random;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.swing.JApplet;
-import javax.swing.JOptionPane;
-
 public class SafeCracker {
 
 	public static void main(String[] args) {
@@ -22,6 +24,13 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
+	for (int i=9999899 ; i<9999999 ; i++) {
+		tryCode(i);
+	}
+	
+		
+		
+		
 		
 
 	}
